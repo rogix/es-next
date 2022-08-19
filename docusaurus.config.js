@@ -8,11 +8,12 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "undefined",
   tagline: "Another engineering blog",
-  url: "https://your-docusaurus-test-site.com",
+  url: "https://rogix.github.io/undefined",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
+  trailingSlash: false,
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
