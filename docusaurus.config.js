@@ -9,7 +9,7 @@ const config = {
   title: "undefined",
   tagline: "Another engineering blog",
   url: "https://rogix.github.io/undefined",
-  baseUrl: "/",
+  baseUrl: "/undefined/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
