@@ -8,7 +8,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "undefined",
   tagline: "Another engineering blog",
-  url: "https://rogix.github.io/undefined",
+  url: "https://rogix.github.io",
   baseUrl: "/undefined/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",

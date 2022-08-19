@@ -5,6 +5,10 @@ authors: [rogix]
 tags: [code]
 ---
 
+```mdx-code-block
+import BrowserWindow from '@site/src/components/BrowserWindow';
+```
+
 Blog posts support [Docusaurus Markdown features](https://docusaurus.io/docs/markdown-features), such as [MDX](https://mdxjs.com/).
 
 :::tip
@@ -18,3 +22,28 @@ Use the power of React to create interactive blog posts.
 <button onClick={() => alert("button clicked!")}>Click me!</button>
 
 :::
+
+## Code blocks
+
+```js
+const foo = "bar";
+```
+
+## Tables
+
+| Feature    | Support |
+| ---------- | ------- |
+| tables     | ✔       |
+| alignment  | ✔       |
+| styling    | ✔       |
+| responsive | ✔       |
+
+<BrowserWindow minHeight={240}>
+
+```jsx title="/src/components/HelloCodeTitle.js"
+function HelloCodeTitle(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
+```
+
+</BrowserWindow>
