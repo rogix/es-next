@@ -33,22 +33,23 @@ const config = {
       "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        docs: false,
-        // docs: {
-        //   sidebarPath: require.resolve("./sidebars.js"),
-        //   // Please change this to your repo.
-        //   // Remove this to remove the "edit this page" links.
-        //   editUrl:
-        //     "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
-        // },
-        blog: {
+        docs: {
           routeBasePath: "/",
-          showReadingTime: true,
-          blogSidebarCount: 0,
+          sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/rogix/es-next/",
+          editUrl:
+            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
+        blog: false,
+        // blog: {
+        //   routeBasePath: "/",
+        //   showReadingTime: true,
+        //   blogSidebarCount: 0,
+        //   // Please change this to your repo.
+        //   // Remove this to remove the "edit this page" links.
+        //   editUrl: "https://github.com/rogix/es-next/",
+        // },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
@@ -70,7 +71,7 @@ const config = {
           //   type: "doc",
           //   docId: "intro",
           //   position: "left",
-          //   label: "Tutorial",
+          //   label: "Features",
           // },
           // { to: "/blog", label: "blog", position: "left" },
           {
