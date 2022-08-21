@@ -4,4 +4,71 @@ sidebar_position: 1
 
 # Array Includes()
 
-The includes() method determines whether an array includes a certain value among its entries, returning true or false as appropriate.
+> The includes() method determines whether an array includes a certain value among its entries, returning true or false as appropriate.
+
+## indexOf()
+
+Let's say we have the following array:
+
+```js
+const array = [1, 2, 3, 4, 5];
+```
+
+How to check if the value 3 is included in the array?
+
+Before the `includes()` method was introduced, we could use the `indexOf()` method:
+
+```js
+const array = [1, 2, 3, 4, 5];
+
+array.indexOf(3); // 2
+
+arra.indexOf(6); // -1
+```
+
+The `indexOf()` method returns the index of the first occurrence of the specified value in the array, or -1 if the value is not present.
+
+:::note
+In the above example, `array.indexOf(3)` returns 2, because 3 is the second element in the array.
+:::
+
+This way if we want to check if the value 3 is included in the array, we can use the following code:
+
+```js
+const array = [1, 2, 3, 4, 5];
+
+if (array.indexOf(3) !== -1) {
+  console.log("The value 3 is included in the array");
+}
+```
+
+But, `indexOf()` is not the best way to check this:
+
+1. The name of the method is not clear.
+2. It doesn't work with `NaN` values, because `indexOf()` use the `strict equality (===)` to compare the elements.
+
+So, for example:
+
+```js
+const array = [1, 2, 3, 4, 5, NaN];
+
+array.indexOf(NaN); // -1
+```
+
+It return -1 because `NaN` is not equal to `NaN`.
+
+## includes()
+
+To fix this, we can use the `includes()` method:
+
+```js
+const array = [1, 2, 3, 4, 5];
+
+array.includes(3); // true
+
+array.includes(6); // false
+```
+
+:::info
+The `includes()` method uses the `sameValueZero` algorithm to compare values.
+:::
