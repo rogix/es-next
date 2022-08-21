@@ -6,10 +6,10 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "undefined",
+  title: "es-next",
   tagline: "Another engineering blog",
   url: "https://rogix.github.io",
-  baseUrl: "/undefined/",
+  baseUrl: "/es-next/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
@@ -18,7 +18,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: "rogix", // Usually your GitHub org/user name.
-  projectName: "undefined", // Usually your repo name.
+  projectName: "es-next", // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -47,8 +47,7 @@ const config = {
           blogSidebarCount: 0,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          editUrl: "https://github.com/rogix/es-next/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -61,7 +60,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: "undefined",
+        title: "es-next",
         // logo: {
         //   alt: "Undefined",
         //   // src: "img/logo.svg",
